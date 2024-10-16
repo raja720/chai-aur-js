@@ -17,3 +17,4 @@ console.log(3+4);
 console.log(typeof undefined); // is undefined
 console.log(typeof null); // is Object
 
+
