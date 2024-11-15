@@ -1,0 +1,1 @@
+// diffrence btw let var const and diffrence btw bloked scope and global scope
