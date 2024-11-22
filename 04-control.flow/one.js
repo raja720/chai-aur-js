@@ -19,7 +19,7 @@ console.log("temperature is less than 50");
 
 
 const balance = 1000;
-
+//  important new way to express if else code 
 // if(balance>500) console.log("you are selected"),console.log("test2"); 
 
 const userLoggedIn = true;
@@ -28,12 +28,14 @@ const loggedinFromgoogle = true;
 const loggedinFromemail = true;
 
 
-if (userLoggedIn&&debitCard && 2== 2){
+if (userLoggedIn&&debitCard && 2== 2){//in this method all the condition are true then it give true
     console.log("allow to buy course");
     
 }
-if (loggedinFromgoogle||loggedinFromemail){
+if (loggedinFromgoogle||loggedinFromemail){ //in which statment only one statement are true then it gives you true result;
     console.log("you are logged in");
+
+
     
 }
 
