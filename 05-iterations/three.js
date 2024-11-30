@@ -22,12 +22,15 @@ const map =new Map()
 map.set("IN","India")
 map.set("USA","United State of America")
 map.set("FR","France")
-// map.set("IN","India") map is known as its unique behaviour it can print unique value 
+map.set("IN","India")// map is known as its unique behaviour it can print unique value 
 
 // console.log(map);
 
 for (const [key , value] of map) {
     console.log(key , value);
+    
+}
+for (const element of object) {
     
 }
 
