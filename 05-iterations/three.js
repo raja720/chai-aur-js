@@ -40,7 +40,7 @@ const myObject = {
     "Game3":"khelega"
 
 }
-// for of loops doesn'nt worling with object because object is nor iterable 
+// for of loops doesn'nt working with object because object is not iterable 
                                 //   88888
 // for (const [key , value] of myObject) {
 //     console.log(key ,value);
