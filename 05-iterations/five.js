@@ -15,9 +15,37 @@ const coding = ['js','cpp','java','phy','ruby']
     
 // })
 
-function printMe(val){
-    console.log(val);
+// function printMe(val){
+//     console.log(val);
     
 
-}
-coding.forEach(printMe)
+// }
+// coding.forEach(printMe)
+
+
+// coding.forEach((val, index, arr)=>{
+//     console.log(val,index,arr);
+    
+
+// })
+
+let myCoding =[
+    {
+        languageName:"javascript",
+        languageFileName:"js"
+    },
+    {
+        languageName:"java",
+        languageFileName:"java"
+    },
+    {
+        languageName:"python",
+        languageFileName:"phy"
+    }
+]
+
+myCoding.forEach((item)=>{
+    console.log(item.languageName);
+    
+
+})
