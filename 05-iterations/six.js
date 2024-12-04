@@ -28,7 +28,7 @@ const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 // console.log(newNums);
 
 
-const mybur=myNums.filter((num)=>{
+const myself=myNums.filter((num)=>{
     return num > 4
 })
-console.log(mybur);
+console.log(myself);
