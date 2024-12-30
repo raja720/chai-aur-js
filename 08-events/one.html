@@ -19,10 +19,39 @@
     </div>
 
     <script>
-        let owl = document.getElementById("owl");
-        owl.addEventListener('click' , ()=>{
-            alert("don't touch me")
-        })
+
+       let images =  document.getElementById("images")
+       images.addEventListener("click" , function(e){
+        console.log('click inside ul');
+        
+       },false)
+
+       
+       let owl =  document.getElementById("owl")
+       owl.addEventListener("click" , function(e){
+        console.log('owl is clicked');
+        e.stopPropagation()
+        
+       },false)
+
+       document.getElementById("google").addEventListener('click', function(e){
+        console.log('google was clicked');
+        e.preventDefault()
+        e.stopPropagation()
+
+       },false)
+
+       // capturing and bubling
+
+       // type , timestamp , defaultprevented
+       // target , toElement , SrcElement , currentTarget
+       // clientX , clientY , screenX , screenY ,
+       // altKey , CtrlKey , ShiftKey , 
+
+    //    document.getElementById('owl').onclick = function(){
+    //     alert("i am clicked")
+
+    //    }
     </script>
 </body>
 </html>
