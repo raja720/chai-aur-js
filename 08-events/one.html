@@ -20,26 +20,26 @@
 
     <script>
 
-       let images =  document.getElementById("images")
-       images.addEventListener("click" , function(e){
-        console.log('click inside ul');
+    //    let images =  document.getElementById("images")
+    //    images.addEventListener("click" , function(e){
+    //     console.log('click inside ul');
         
-       },false)
+    //    },false)
 
        
-       let owl =  document.getElementById("owl")
-       owl.addEventListener("click" , function(e){
-        console.log('owl is clicked');
-        e.stopPropagation()
+    //    let owl =  document.getElementById("owl")
+    //    owl.addEventListener("click" , function(e){
+    //     console.log('owl is clicked');
+    //     e.stopPropagation()
         
-       },false)
+    //    },false)
 
-       document.getElementById("google").addEventListener('click', function(e){
-        console.log('google was clicked');
-        e.preventDefault()
-        e.stopPropagation()
+    //    document.getElementById("google").addEventListener('click', function(e){
+    //     console.log('google was clicked');
+    //     e.preventDefault()
+    //     e.stopPropagation()
 
-       },false)
+    //    },false)
 
        // capturing and bubling
 
@@ -52,6 +52,19 @@
     //     alert("i am clicked")
 
     //    }
+
+
+    document.getElementById("images").addEventListener("click",(e)=>{
+        console.log(e.target.tagName);
+        
+        if (e.target.tagName === "IMG") {
+            let removeit = e.target.parentNode;
+            removeit.remove()
+        }
+        
+
+        
+    })
     </script>
 </body>
 </html>
