@@ -1,25 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>Background color changer</h1>
     <button id="start">Start</button>
     <button id="stop">Stop</button>
 </body>
 <script>
-    let hexcode = ()=>{
-        let number = "0123456789ABCDEF"
+    const hexcode = () => {
+        const number = "0123456789ABCDEF"
         let color = '#'
-        for
+        for (let i = 0; i < 6; i++) {
+            color += number[Math.floor(Math.random() * 16)];
+
+        }
+        return color
     }
 
+    console.log(hexcode());
+
+    let intervalid ;
 
 
+    const startchangingcolor = ()=>{
+        if (!intervalid) {
+            intervalid = setInterval(changecolor,1000);
+        }
+    //    intervalid = setInterval(changecolor,1000);
+       function changecolor () {
+         document.body.style.backgroundColor= hexcode();
+        }
+      
+    }
 
+    const stopchangingcolor = ()=>{
+        clearInterval(intervalid);
+        intervalid= null;
+    };
+
+    document.querySelector("#start").addEventListener("click", startchangingcolor)
+    document.querySelector("#stop").addEventListener("click", stopchangingcolor)
 
 </script>
+
 </html>
