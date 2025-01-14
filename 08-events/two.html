@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">stop</button>
+
+</body>
+<script>
+
+    const sayRaja = () => { console.log("raja singh isthe name of brand of the entire world") }
+    const changetext = ()=>{document.querySelector("h1").innerText = "raja singh is the king"}
+     const changeME = setTimeout(changetext  
+    , 3000)
+   const stop = document.querySelector("#stop").addEventListener("click" ,()=>{
+    clearTimeout(changeME)
+    console.log("stooped");
+    
+   } )
+
+</script>
+
+</html>

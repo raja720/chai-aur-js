@@ -70,3 +70,13 @@ const promiseFive = new Promise((resolve ,reject)=>{
     }, 1000);
 })
 
+
+
+// console.log("adsfuje");
+
+// setTimeout(() => {
+//     console.log("raja singh");   call stack example
+    
+// }, );
+
+// console.log("ksudg");
