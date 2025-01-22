@@ -13,37 +13,34 @@
     <button id="stop">Stop</button>
 </body>
 <script>
+    
     const hexcode = () => {
         const number = "0123456789ABCDEF"
         let color = '#'
         for (let i = 0; i < 6; i++) {
             color += number[Math.floor(Math.random() * 16)];
-
         }
         return color
     }
-
     console.log(hexcode());
 
-    let intervalid ;
-
-
-    const startchangingcolor = ()=>{
+    let intervalid;
+ 
+    const startchangingcolor = () => {
         if (!intervalid) {
-            intervalid = setInterval(changecolor,1000);
+            intervalid = setInterval(changecolor, 1000);
         }
-    //    intervalid = setInterval(changecolor,1000);
-       function changecolor () {
-         document.body.style.backgroundColor= hexcode();
+        //    intervalid = setInterval(changecolor,1000);
+        function changecolor() {
+            document.body.style.backgroundColor = hexcode();
         }
-      
     }
 
-    const stopchangingcolor = ()=>{
+     
+    const stopchangingcolor = () => {
         clearInterval(intervalid);
-        intervalid= null;
+        intervalid = null;
     };
-
     document.querySelector("#start").addEventListener("click", startchangingcolor)
     document.querySelector("#stop").addEventListener("click", stopchangingcolor)
 
